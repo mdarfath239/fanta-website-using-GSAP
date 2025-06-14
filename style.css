@@ -1,0 +1,271 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  width: 100%;
+  height: 100vh;
+color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#main{
+  background: linear-gradient(90deg,rgb(223, 162, 49),#ff8c00 );
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+}
+
+nav h1{
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.center a{
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+  font-size: 1rem;
+  position: relative;
+}
+.center a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.one{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  background: linear-gradient(150deg,rgb(223, 162, 49),#ff8c00  );
+}
+
+.one h1{
+  font-size: 20vw;
+  position: absolute;
+  z-index: 1;
+  /* margin: 1rem 0; */
+}
+.fanta{
+  width: 500px;
+  height: 500px;
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  position: absolute;
+
+  /* background-color: red; */
+}
+
+.orangeslice {
+ position: absolute;
+ top: 8%;
+ left: 33%;
+ z-index: 1;
+ width: 200px;
+ transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+ height: 200px;
+ /* background-color: orange; */
+}
+
+.orange {
+ position: absolute;
+ bottom: 8%;
+ right: 35%;
+ z-index: 2;
+ width: 200px;
+ transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+ height: 200px;
+ /* background-color: orange; */
+}
+
+.leaf{
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: 250px;
+  height: 250px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  z-index: 3;
+}
+.leaf2{
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+  width: 250px;
+  height: 250px;
+  rotate: 90deg;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  z-index: 3;
+}
+.leafcenter{
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  width: 370px;
+  height: 370px;
+  z-index: 1;
+  rotate: 90deg;
+  /* background-color: orange; */
+}
+.coconat{
+  position: absolute;
+top: 0;
+right: 0;
+  width: 370px;
+  height: 370px;
+  z-index: 1;
+
+  /* background-color: orange; */
+}
+
+.two{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #35281D;
+}
+.two .left{
+  width: 50%;
+}
+.two .right{
+  width: 50%;
+}
+#svg{
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  left: 20%;
+bottom: 1%;
+}
+.two .right{
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+ align-items: flex-start;
+}
+
+.two .right h1{
+  font-size: 5rem;
+  margin: 0;
+  /* background-color: #35281D; */
+}
+.two .right p{
+  font-size: 1.2rem;
+  margin: 0;
+  /* background-color: #35281D; */
+}
+
+.two .right button{
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #FF0066;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.three {
+  background: linear-gradient(90deg, rgb(223, 162, 49), #ff8c00);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.card {
+  width: 400px;
+  height: 550px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#card1 {
+  background-color: #f40009;
+}
+
+#card2 {
+  background-color: #ff8c00;
+}
+
+#card3 {
+  background-color: #005baa;
+}
+
+.card h1 {
+  color: white;
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cocacola, .pepsi {
+  max-height: 90%;
+  position: absolute;
+  top: -10%;
+  object-fit: contain;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.lemon {
+  max-height: 70%;
+  position: absolute;
+  top: -19%;
+  object-fit: contain;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.lemon2 {
+  max-height: 70%;
+  position: absolute;
+  top: -19%;
+  object-fit: contain;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
